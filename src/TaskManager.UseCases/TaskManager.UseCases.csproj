@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="Users\Deactivate\**" />
+    <Compile Remove="Users\Login\**" />
+    <Compile Remove="Users\RefreshToken\**" />
+    <Compile Remove="Users\Register\**" />
+    <Compile Remove="Users\UpdateRole\**" />
+    <EmbeddedResource Remove="Users\Deactivate\**" />
+    <EmbeddedResource Remove="Users\Login\**" />
+    <EmbeddedResource Remove="Users\RefreshToken\**" />
+    <EmbeddedResource Remove="Users\Register\**" />
+    <EmbeddedResource Remove="Users\UpdateRole\**" />
+    <None Remove="Users\Deactivate\**" />
+    <None Remove="Users\Login\**" />
+    <None Remove="Users\RefreshToken\**" />
+    <None Remove="Users\Register\**" />
+    <None Remove="Users\UpdateRole\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManager.Core\TaskManager.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Boards\Security\" />
+  </ItemGroup>
+
+</Project>

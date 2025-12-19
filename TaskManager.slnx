@@ -1,0 +1,33 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".template.config/template.json" />
+    <File Path="CleanArchitecture.nuspec" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/TaskManager.Core/TaskManager.Core.csproj" />
+    <Project Path="src/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj" />
+    <Project Path="src/TaskManager.UseCases/TaskManager.UseCases.csproj" />
+    <Project Path="src/TaskManager.Web/TaskManager.Web.csproj" />
+  </Folder>
+  <Folder Name="/src/_aspire/">
+    <Project Path="src/TaskManager.AspireHost/TaskManager.AspireHost.csproj" />
+    <Project Path="src/TaskManager.ServiceDefaults/TaskManager.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TaskManager.FunctionalTests/TaskManager.FunctionalTests.csproj">
+      <BuildDependency Project="src/TaskManager.Web/TaskManager.Web.csproj" />
+    </Project>
+    <Project Path="tests/TaskManager.IntegrationTests/TaskManager.IntegrationTests.csproj">
+      <BuildDependency Project="src/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj" />
+    </Project>
+    <Project Path="tests/TaskManager.UnitTests/TaskManager.UnitTests.csproj" />
+  </Folder>
+</Solution>
