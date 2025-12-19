@@ -100,7 +100,7 @@ dotnet test tests/TaskManager.IntegrationTests/TaskManager.IntegrationTests.cspr
 
 ## Project Demonstration
 
-link
+https://github.com/user-attachments/assets/af409820-93ee-4930-8e86-8a9ceeecef50
 
 ---
 
