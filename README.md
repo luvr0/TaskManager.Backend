@@ -53,8 +53,8 @@ TaskManager offers a pragmatic starting point for CRUD-style task tracking syste
 Clone the repository:
 
 ```
-git clone https://github.com/luvr0/TaskManager.git
-cd TaskManager
+git clone https://github.com/luvr0/TaskManager.Backend.git
+cd TaskManager.Backend
 ```
 
 Restore dependencies:
